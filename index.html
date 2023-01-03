@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="code.js" defer></script>
+  
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>Task Manager</li>
+    </ul>
+  </nav>
+  <div class="add">
+    <input type="text" id="input" placeholder="Task name..">
+    <button type="submit" id="addtask">Add Task</button>
+  </div>
+  <div class="container">
+    <section class="section" id="open">
+      <div class="header">
+        <h1>OPEN</h1>
+      </div>
+      <div class="allTasks scroll hight">
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="header">
+        <h1>IN PROGRESS</h1>
+      </div>
+      <div class="allProgress scroll hight">
+      </div>
+    </section>
+
+    <section class="section" id="review">
+      <div class="header">
+        <h1>IN REVIEW</h1>
+      </div>
+      <div class="allReview scroll hight">
+      </div>
+    </section>
+
+    <section class="section" id="done">
+      <div class="header">
+        <h1>DONE</h1>
+      </div>
+      <div class="allDone scroll hight">
+      </div>
+    </section>
+
+  </div>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Task Description</h1>
+      <textarea type="text" id="description" placeholder="Write description.."></textarea></textarea>
+      <br>
+      <button id="saveBtn" onclick="save()">Save</button>
+      <div class="close-btn" onclick="togglePopup()"> &times;</div>
+    </div>
+  </div>
+</body>
+
+</html>
