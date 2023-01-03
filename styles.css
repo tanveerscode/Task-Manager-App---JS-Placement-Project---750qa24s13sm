@@ -1,1 +1,224 @@
+body{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg,rgb(47, 47, 167),rgb(36, 186, 197));
+}
+nav{
+    color: white;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(18, 95, 105);
+}
+li{
+    list-style-type: none;
+    font-size: 40px;
+}
+ul{
+    margin:0px;
+}
+#input{
+    width: 285px;
+    font-size: 18px;
+    border: 2px solid rgb(15, 116, 156);
+}
+.section{
+    width: 21.7vw;
+    height: 30vw;
+    margin: 15px;
+    margin-top: 30px;
+    border: 2px solid black;
+    background-color: rgb(221, 212, 212);
+    border-radius: 5px;
+    border: none;
+}
+h1{
+    color: rgb(5, 32, 63);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.add{
+    display: flex;
+    margin: 5px;
+    margin-left: 46px;
 
+}
+#addtask{
+    cursor:pointer;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(43, 100, 114);
+    color: white;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+
+.TaskWrapper{
+    position: relative;
+    right: 2px;
+    width: 20.5vw;
+    height: auto;
+    border: 2px solid rgb(243, 234, 234);
+    margin: 8px;
+    background-color: white;
+    border-radius: 10px;
+}
+.TaskWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.task{
+    height: auto;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(20, 53, 102);
+    margin-left:5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.descript{
+    margin: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 10px;
+}
+.pin{
+    position: relative;
+    top: 8px;
+    width: 35px;
+    height: 8px;
+    background-color: rgb(219, 62, 62);
+    margin-top: px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+.circle{
+    position: absolute;
+    top: 3px;
+    left: 250px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(228, 218, 218);
+    color: rgb(219, 62, 62);;
+    border-radius: 100%;
+    border: 3px solid rgb(219, 62, 62);
+    
+}
+.circle:hover{
+    cursor: pointer;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+#paraDiv::-webkit-scrollbar{
+    display: none;
+}
+
+.allTasks{
+    overflow: scroll;
+    height: 23vw;
+}
+
+.hight{
+   
+    overflow: scroll;
+    height: 26vw;
+}
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display:none;
+    border-radius: 10px;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: rgb(217, 224, 111);
+    width: 450px;
+    height: 230px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay {
+    display: block;
+
+}
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+#paraDiv{
+    width: 20vw;
+   
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.para{
+   color: rgb(129, 10, 10);
+   font-size: 15px;
+   font-weight:600;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+#description{
+    margin: 10px;
+    height: 80px;
+    width: 400px;
+    color: rgb(141, 14, 14);
+    font-size: 3vh;
+    resize: none;
+}
+#saveBtn{
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    background-color: green;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none; 
+}
+#description::-webkit-scrollbar{
+    display: none;
+}
+.delete{
+    display: none;
+}
