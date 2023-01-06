@@ -29,6 +29,7 @@ ul{
     width: 285px;
     font-size: 18px;
     border: 2px solid rgb(15, 116, 156);
+    border-radius: 5px;
 }
 .section{
     width: 21.7vw;
@@ -60,6 +61,7 @@ h1{
     color: white;
     margin-left: 30px;
     border-radius: 3px;
+    border: none;
 }
 
 .TaskWrapper{
