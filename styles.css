@@ -222,3 +222,12 @@ h1{
 .delete{
     display: none;
 }
+.allProgress .pin{
+    background-color: rgb(219, 198, 62);
+}
+.allReview .pin{
+    background-color: rgb(227, 84, 170);
+}
+.allDone .pin{
+    background-color: rgb(30, 165, 9);
+}
