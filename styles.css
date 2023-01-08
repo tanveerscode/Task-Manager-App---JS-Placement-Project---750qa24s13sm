@@ -10,20 +10,20 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(45deg,rgb(47, 47, 167),rgb(36, 186, 197));
+    background: linear-gradient(45deg,rgb(71, 71, 148),rgb(3, 138, 148));
 }
 nav{
     color: white;
     width: 100vw;
     height: 50px;
-    background-color: rgb(18, 95, 105);
+    background-color: rgba(6, 9, 34, 0.987);
 }
 li{
     list-style-type: none;
     font-size: 40px;
 }
 ul{
-    margin:0px;
+    margin:0;
 }
 #input{
     width: 285px;
@@ -36,18 +36,20 @@ ul{
     height: 30vw;
     margin: 15px;
     margin-top: 30px;
-    border: 2px solid black;
     background-color: rgb(221, 212, 212);
     border-radius: 5px;
     border: none;
 }
-h1{
+section h1{
     color: rgb(5, 32, 63);
     font-size: 18px;
     margin-top: 15px;
     margin-left: 15px;
 }
 .add{
+    position: absolute;
+    top: .5%;
+    right: 3.3%;
     display: flex;
     margin: 5px;
     margin-left: 46px;
@@ -57,14 +59,18 @@ h1{
     cursor:pointer;
     width: 90px;
     height: 35px;
-    background-color: rgb(43, 100, 114);
+    background-color: rgb(18, 185, 0);
     color: white;
     margin-left: 30px;
     border-radius: 3px;
     border: none;
 }
+#addtask:hover{
+    background-color: rgb(29, 238, 6);
+}
 
 .TaskWrapper{
+    cursor:grab;
     position: relative;
     right: 2px;
     width: 20.5vw;
@@ -77,7 +83,6 @@ h1{
 .TaskWrapper::-webkit-scrollbar{
     display: none;
 }
-
 .task{
     height: auto;
     font-size: 18px;
@@ -153,27 +158,27 @@ h1{
     top: 35%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    background-color: rgb(217, 224, 111);
-    width: 450px;
-    height: 230px;
+    background-color: rgb(225, 212, 74);
+    width: 28.125rem;
+    height: 14.375rem;
     z-index: 2;
     text-align: center;
-    padding: 20px;
+    padding: 2px;
     box-sizing: border-box;
     border-radius: 8px;
 }
 .popup .close-btn{
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
+    right: 2%;
+    top: 3%;
+    width: 20px;
+    height: 20px;
+    background: rgb(190, 10, 10);
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 20px;
     text-align: center;
     border-radius: 50%;
 }
@@ -188,9 +193,8 @@ h1{
 }
 #paraDiv{
     width: 20vw;
-   
     position: relative;
-    top: 5px;
+    top: 0px;
     left: 5px;
 }
 .para{
@@ -201,8 +205,8 @@ h1{
 
 }
 #description{
-    margin: 10px;
-    height: 80px;
+    margin-top: .6%;
+    height: 50%;
     width: 400px;
     color: rgb(141, 14, 14);
     font-size: 3vh;
@@ -211,13 +215,21 @@ h1{
 #saveBtn{
     cursor: pointer;
     position: absolute;
-    left: 30px;
+    left: 77%;
+    bottom: 4%;
     background-color: green;
     color: #fff;
     width: 80px;
     height: 40px;
     border-radius: 5px;
     border: none; 
+}
+#h1{
+    color: rgb(20, 53, 102);
+    font-size: 1.4rem;
+    /* background-color: red; */
+    text-decoration: underline;
+    margin-top: .7rem;
 }
 #description::-webkit-scrollbar{
     display: none;
