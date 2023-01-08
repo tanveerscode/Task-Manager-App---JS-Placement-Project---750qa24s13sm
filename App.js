@@ -38,6 +38,7 @@ btn.onclick = function () {
     boxes[0].appendChild(newTask);
     newTask.addEventListener("click", () => {
       document.getElementById("popup-1").classList.toggle("active");
+       document.getElementById("h1").innerHTML=task.innerHTML;
       description.focus();
       currTasksDesc = para;
     });
@@ -77,6 +78,7 @@ function dragItem() {
 
 const togglePopup = () => {
   document.getElementById("popup-1").classList.toggle("active");
+  description.value = "";
 }
 
 function save() {
